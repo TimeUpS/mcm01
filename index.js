@@ -4,7 +4,16 @@
 const { Client, Collection } = require("discord.js");
 const { readdirSync } = require("fs");
 const { join } = require("path");
-const { TOKEN, PREFIX } = require("./config.json");
+
+let TOKEN, PREFIX;
+try {
+  const config = require("./config.json");
+  TOKEN = config.TOKEN;
+  PREFIX = config.PREFIX;
+} catch (error) {
+  TOKEN = process.env.TOKEN;
+  PREFIX = process.env.PREFIX;
+}
 
 const client = new Client({ disableMentions: "everyone" });
 
@@ -20,7 +29,7 @@ const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
  */
 client.on("ready", () => {
   console.log(`${client.user.username} ready!`);
-  client.user.setActivity(`${PREFIX}help`);
+  client.user.setActivity(`${PREFIX}help and ${PREFIX}play`, { type : "LISTENING" });
 });
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);

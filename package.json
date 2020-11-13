@@ -1,9 +1,9 @@
 {
-  "name": "gwbot",
-  "version": "0.7.0",
+  "name": "evobot",
+  "version": "0.9.0",
   "description": "Discord music bot built with discord.js",
   "main": "index.js",
-  "author": "TimeUpS",
+  "author": "Erit Islami <eritislami@gmail.com>",
   "private": true,
   "homepage": "https://github.com/eritislami/evobot",
   "repository": "github:eritislami/evobot",
@@ -12,17 +12,14 @@
     "node": ">=12.0.0"
   },
   "dependencies": {
-    "@discordjs/opus": "^0.3.2",
-    "discord.js": "^12.0.1",
+    "@discordjs/opus": "^0.3.3",
+    "discord.js": "^12.4.1",
     "ffmpeg-static": "^4.2.3",
-    "fs": "0.0.1-security",
     "lyrics-finder": "^21.0.5",
-    "path": "^0.12.7",
     "simple-youtube-api": "^5.1.1",
-    "soundcloud-downloader": "^0.1.8",
+    "soundcloud-downloader": "^0.1.6",
     "string-progressbar": "^1.0.1",
-    "util": "^0.12.3",
-    "ytdl-core": "^3.4.2",
+    "ytdl-core": "^4.0.3",
     "ytdl-core-discord": "^1.2.4"
   },
   "scripts": {
