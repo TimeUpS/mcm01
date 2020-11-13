@@ -1,7 +1,7 @@
 ﻿{
-  "name": "Majestic",
+  "name": "Majestic Bot",
   "description": "🤖 Discord Music Bot built with discord.js",
-  "repository": "",
-  "logo": "",
+  "repository": "https://github.com/",
+  "logo": "https://i.imgur.com/",
   "keywords": ["discord", "discordjs", "music", "bot"]
 }
